@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
+    "build:ui": "rm -rf dist && cd ../phonebookFrontend/ && npm run build && cp -r dist ../phonebookBackend",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
